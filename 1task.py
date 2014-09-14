@@ -18,8 +18,8 @@ for i in range (N):
 whole_array=[]
 
 for i in range (N):
-	whole.append(init_array1[i])
-for i in range (N):
+	
+	whole_array.append(init_array1[i])
 	whole_array.append(init_array2[i])
 
 whole_array.sort()
