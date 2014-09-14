@@ -15,15 +15,15 @@ for i in range (N):
 	print 'Введите %d элемент втрого массива:' % i
 	init_array2.append(float(raw_input()))
 
-init_array=[]
+whole_array=[]
 
 for i in range (N):
-	init_array.append(init_array1[i])
+	whole.append(init_array1[i])
 for i in range (N):
-	init_array.append(init_array2[i])
+	whole_array.append(init_array2[i])
 
-init_array.sort()
-median = (init_array[N-1]+init_array[N])/2
+whole_array.sort()
+median = (whole_array[N-1]+whole_array[N])/2
 	
 print 'Медиана массива длиной 2N %r' % median
 
