@@ -1,6 +1,3 @@
-hh_1_task
-=========
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Медиана, python 2.7
