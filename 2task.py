@@ -39,69 +39,56 @@ def partition():
 		else:
 			pan2.append(init_array[k])
 
-def exit():
+print ('Введите исходный массив(все элементы через пробел)')
+init_array = list(map(int, raw_input().split()))
+n = len (init_array)
+ 
+for i in range (n):
+	b.append(0)
+	
+balance = False
+existence_of_100 = False
 
-	char = ''
-	print ('Хотите выйти? Y/n')
-	char = raw_input()
-	if char in ('y','Y'):
-		return True
-		
-while True:
+while check():
 
-	print ('Введите исходный массив(все элементы через пробел)')
-	init_array = list(map(int, raw_input().split()))
-	n = len (init_array)
-	 
+	add_1()
+	
+	s1 = 0
+	s2 = 0
+	
 	for i in range (n):
-		b.append(0)
-		
-	balance = False
-	existence_of_100 = False
-	
-	while check():
-	
-		add_1()
-		
-		s1 = 0
-		s2 = 0
-		
-		for i in range (n):
-	
-			if b[i] == 0:
-				s1 += init_array[i]
-			else:
-				s2 += init_array[i]
-	
-			if (s1 == 100) or (s2 == 100):
-				existence_of_100 = True				
-		
-		if abs(s1 - s2) == 0 :
-			partition()	
-			balance = True
-	
-	if balance == True:
-		
-		for i in range (len(pan1)):
-			print (pan1[i],end=' ')
-		print ('- ',end='')
-	
-		for i in range (len(pan2)):
-			print (pan2[i],end=' ')
-		print ('\n')
-	
-		if existence_of_100:
-			print ('yes')
+
+		if b[i] == 0:
+			s1 += init_array[i]
 		else:
-			print ('no')		
+			s2 += init_array[i]
+
+		if (s1 == 100) or (s2 == 100):
+			existence_of_100 = True				
+	
+	if abs(s1 - s2) == 0 :
+		partition()	
+		balance = True
+
+if balance == True:
+	
+	for i in range (len(pan1)):
+		print (pan1[i],end=' ')
+	print ('- ',end='')
+
+	for i in range (len(pan2)):
+		print (pan2[i],end=' ')
+	print ('\n')
+
+	if existence_of_100:
+		print ('yes')
 	else:
-		print ('Уравновесить весы невозможно')
-		if existence_of_100:
-			print ('yes')
-		else:
-			print ('no')
+		print ('no')		
+else:
+	print ('Уравновесить весы невозможно')
+	if existence_of_100:
+		print ('yes')
+	else:
+		print ('no')
 			
-	if exit():
-		break
-	else:
-		continue
+	
