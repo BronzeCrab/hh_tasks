@@ -32,6 +32,6 @@ while True:
 	print 'Медиана массива длиной 2N: %r' % median
 	
 	if exit():
-			break
-		else:
-			continue
+		break
+	else:
+		continue
