@@ -62,10 +62,10 @@ while True:
 	while check():
 	
 		add_1()
-	
+		
 		s1 = 0
 		s2 = 0
-	
+		
 		for i in range (n):
 	
 			if b[i] == 0:
