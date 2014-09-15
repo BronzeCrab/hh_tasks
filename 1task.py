@@ -5,7 +5,6 @@
 
 def exit():
 
-	char = ''
 	print ('Хотите выйти? Y/n')
 	char = raw_input()
 	if char in ('y','Y'):
