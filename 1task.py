@@ -4,7 +4,9 @@
 # python 2.7
 
 print 'Введите элементы массива через пробел'
+
 init_array = list(map(int, raw_input().split()))
+N = len (init_array)
 
 init_array1 = []
 init_array2 = []
