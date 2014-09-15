@@ -3,8 +3,8 @@
 # Медиана 
 # python 2.7
 
-print 'Введите длину иcxодных массивов'
-N = int(raw_input())
+print 'Введите элементы массива через пробел'
+init_array = list(map(int, raw_input().split()))
 
 init_array1 = []
 init_array2 = []
