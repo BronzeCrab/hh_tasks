@@ -100,7 +100,7 @@ while True:
 			print ('yes')
 		else:
 			
-if exit():
-		break
-	else:
-		continue
+	if exit():
+			break
+		else:
+			continue
