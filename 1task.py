@@ -12,12 +12,12 @@ def exit():
 		
 while True:
 
-	print 'Введите элементы массивов через пробел'
+	print 'Введите элементы массивов через пробел:'
 	
 	init_array = list(map(float, raw_input().split()))
 	
 	if len(init_array) % 2 != 0:
-		print 'Массивы не равны по количеству элементов'
+		print 'Массивы не равны по количеству элементов.'
 		if exit():
 			break
 		else:
