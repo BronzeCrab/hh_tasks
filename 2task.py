@@ -102,6 +102,6 @@ while True:
 			print ('no')
 			
 	if exit():
-			break
-		else:
-			continue
+		break
+	else:
+		continue
