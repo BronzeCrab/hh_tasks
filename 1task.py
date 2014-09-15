@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Медиана, python 2.7
+# Медиана 
+# python 2.7
 
 print 'Введите длину иcxодных массивов'
 N = int(raw_input())
