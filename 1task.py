@@ -3,13 +3,29 @@
 # Медиана 
 # python 2.7
 
-print 'Введите элементы массивов через пробел'
+def exit():
 
-init_array = list(map(float, raw_input().split()))
-N = len (init_array) / 2
+	char = ''
+	print ('Хотите выйти? Y/n')
+	char = raw_input()
+	if char in ('y','Y'):
+		return True
+		
+while True:
 
-init_array.sort()
-median = (init_array[N-1] + init_array[N]) / 2
+	print 'Введите элементы массивов через пробел'
 	
-print 'Медиана массива длиной 2N: %r' % median
+	init_array = list(map(float, raw_input().split()))
+	
+	if len(init_array) % 2 != 0:
+		print 'Массивы не равны по количеству элементов'
+		if exit():
+			break
+	
+	N = len(init_array) / 2
+	
+	init_array.sort()
+	median = (init_array[N-1] + init_array[N]) / 2
+		
+	print 'Медиана массива длиной 2N: %r' % median
 
