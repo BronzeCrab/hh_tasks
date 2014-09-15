@@ -30,4 +30,8 @@ while True:
 	median = (init_array[N-1] + init_array[N]) / 2
 		
 	print 'Медиана массива длиной 2N: %r' % median
-
+	
+	if exit():
+			break
+		else:
+			continue
