@@ -35,7 +35,7 @@ def partition():
 
 		elif b[k] == 1:
 			pan1.append(init_array[k])
-
+			
 		else:
 			pan2.append(init_array[k])
 
