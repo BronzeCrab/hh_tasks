@@ -21,6 +21,8 @@ while True:
 		print 'Массивы не равны по количеству элементов'
 		if exit():
 			break
+		else:
+			continue
 	
 	N = len(init_array) / 2
 	
