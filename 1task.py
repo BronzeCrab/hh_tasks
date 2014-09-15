@@ -11,5 +11,5 @@ N = len (init_array) / 2
 init_array.sort()
 median = (init_array[N-1] + init_array[N]) / 2
 	
-print 'Медиана массива длиной 2N %r' % median
+print 'Медиана массива длиной 2N: %r' % median
 
