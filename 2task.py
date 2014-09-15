@@ -99,6 +99,7 @@ while True:
 		if existence_of_100:
 			print ('yes')
 		else:
+			print ('no')
 			
 	if exit():
 			break
